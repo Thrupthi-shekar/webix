@@ -17,16 +17,16 @@ $user = current_user();
 <body>
     <div class="app-shell">
         <!-- Header -->
-        <header class="app-header">
-            <div class="app-title">
+  <header class="app-header">
+    <div class="app-title">
                 <div class="hamburger" id="hamburger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
                 <h1 style="margin: 0; font-size: 1.5rem;">WebixApp</h1>
-            </div>
-            <div class="userbox">
+    </div>
+    <div class="userbox">
                 <div class="avatar"></div>
                 <div>
                     <div style="font-size: 0.9rem; font-weight: 600;"><?php echo htmlspecialchars($user['name']); ?></div>
@@ -39,14 +39,14 @@ $user = current_user();
                         <line x1="21" y1="12" x2="9" y2="12"></line>
                     </svg>
                 </div>
-            </div>
-        </header>
+    </div>
+  </header>
 
         <!-- Main Body -->
-        <div class="app-body">
+  <div class="app-body">
             <!-- Sidebar -->
             <aside class="sidebar" id="sidebar">
-                <nav>
+      <nav>
                     <a href="home.php" class="nav-link">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 8px;">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -69,79 +69,79 @@ $user = current_user();
                         </svg>
                         Contact
                     </a>
-                </nav>
-            </aside>
+      </nav>
+    </aside>
 
             <!-- Main Content -->
             <main class="content about-bg">
                 <div class="section">
-                    <h2 style="margin-top: 0; color: var(--primary);">About WebixApp</h2>
-                    <p>WebixApp is a modern, responsive web application built with cutting-edge technologies to provide a seamless user experience. This application demonstrates the power of combining PHP backend with Webix UI framework and modern CSS.</p>
+                    <h2 style="margin-top: 0; color: var(--primary);">About ShopSphere (Demo)</h2>
+                    <p>ShopSphere is a demo e‑commerce platform concept. It highlights a clean admin UX for managing products, orders, promotions and analytics so merchants can grow with confidence.</p>
                     
                     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
                         <div class="section" style="margin: 0;">
-                            <h3 style="color: var(--accent); margin-top: 0;">Technologies Used</h3>
+                            <h3 style="color: var(--accent); margin-top: 0;">What You Can Manage</h3>
                             <div style="display: flex; flex-direction: column; gap: 15px;">
                                 <div style="display: flex; align-items: center; padding: 10px; background: rgba(34,211,238,0.1); border-radius: 8px; border-left: 4px solid var(--primary);">
                                     <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                                        <span style="color: white; font-weight: bold;">PHP</span>
+                                        <span style="color: white; font-weight: bold;">CAT</span>
                                     </div>
                                     <div>
-                                        <div style="font-weight: 600;">PHP 8+</div>
-                                        <div style="font-size: 0.9rem; color: var(--muted);">Modern PHP with strict types, prepared statements, and password hashing</div>
+                                        <div style="font-weight: 600;">Catalog</div>
+                                        <div style="font-size: 0.9rem; color: var(--muted);">Products, variants, categories, collections, inventory</div>
                                     </div>
                                 </div>
                                 
                                 <div style="display: flex; align-items: center; padding: 10px; background: rgba(167,139,250,0.1); border-radius: 8px; border-left: 4px solid var(--accent);">
                                     <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--accent), var(--primary)); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                                        <span style="color: white; font-weight: bold;">Webix</span>
+                                        <span style="color: white; font-weight: bold;">ORD</span>
                                     </div>
                                     <div>
-                                        <div style="font-weight: 600;">Webix UI Framework</div>
-                                        <div style="font-size: 0.9rem; color: var(--muted);">Rich UI components, forms, and data tables</div>
+                                        <div style="font-weight: 600;">Orders</div>
+                                        <div style="font-size: 0.9rem; color: var(--muted);">Checkout, payments, shipping, returns</div>
                                     </div>
                                 </div>
                                 
                                 <div style="display: flex; align-items: center; padding: 10px; background: rgba(16,185,129,0.1); border-radius: 8px; border-left: 4px solid var(--success);">
                                     <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--success), var(--primary)); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                                        <span style="color: white; font-weight: bold;">CSS3</span>
+                                        <span style="color: white; font-weight: bold;">MKT</span>
                                     </div>
                                     <div>
-                                        <div style="font-weight: 600;">Modern CSS3</div>
-                                        <div style="font-size: 0.9rem; color: var(--muted);">Responsive design, animations, and dark theme</div>
+                                        <div style="font-weight: 600;">Marketing</div>
+                                        <div style="font-size: 0.9rem; color: var(--muted);">Coupons, email campaigns, cross‑sell widgets</div>
                                     </div>
                                 </div>
                                 
                                 <div style="display: flex; align-items: center; padding: 10px; background: rgba(245,158,11,0.1); border-radius: 8px; border-left: 4px solid var(--warning);">
                                     <div style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--warning), var(--primary)); border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
-                                        <span style="color: white; font-weight: bold;">MySQL</span>
+                                        <span style="color: white; font-weight: bold;">ANL</span>
                                     </div>
                                     <div>
-                                        <div style="font-weight: 600;">MySQL Database</div>
-                                        <div style="font-size: 0.9rem; color: var(--muted);">Secure data storage with prepared statements</div>
+                                        <div style="font-weight: 600;">Analytics</div>
+                                        <div style="font-size: 0.9rem; color: var(--muted);">Sales dashboards, funnels, cohort insights</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="section" style="margin: 0;">
-                            <h3 style="color: var(--accent); margin-top: 0;">Key Features</h3>
+                            <h3 style="color: var(--accent); margin-top: 0;">Demo Features</h3>
                             <div style="display: flex; flex-direction: column; gap: 12px;">
                                 <div style="display: flex; align-items: center;">
                                     <div style="width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 12px;"></div>
-                                    <span>User Registration & Authentication</span>
+                                    <span>Product import/export (CSV)</span>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <div style="width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 12px;"></div>
-                                    <span>Comprehensive Form Validation</span>
+                                    <span>Order timeline and activity tracking</span>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <div style="width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 12px;"></div>
-                                    <span>Responsive Design</span>
+                                    <span>Promotion engine and discount rules</span>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <div style="width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 12px;"></div>
-                                    <span>Session Management</span>
+                                    <span>Analytics with KPIs and trending charts</span>
                                 </div>
                                 <div style="display: flex; align-items: center;">
                                     <div style="width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 12px;"></div>
@@ -187,12 +187,12 @@ $user = current_user();
                     </div>
                     
                     <div style="margin-top: 30px; text-align: center; padding: 20px; background: linear-gradient(135deg, rgba(34,211,238,0.1), rgba(167,139,250,0.1)); border-radius: 12px;">
-                        <h3 style="color: var(--primary); margin-top: 0;">Built with ❤️</h3>
-                        <p style="margin: 0; color: var(--muted);">This application showcases modern web development practices with a focus on security, user experience, and maintainable code.</p>
+                        <h3 style="color: var(--primary); margin-top: 0;">Demo Only</h3>
+                        <p style="margin: 0; color: var(--muted);">ShopSphere is a sample concept to demonstrate how an e‑commerce admin could look and feel.</p>
                     </div>
                 </div>
-            </main>
-        </div>
+    </main>
+  </div>
 
         <!-- Footer -->
         <footer class="footer">

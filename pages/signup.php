@@ -45,6 +45,7 @@
                 container: "signupForm",
                 view: "form",
                 id: "signupForm",
+                elementsConfig: { labelWidth: 180 },
                 elements: [
                     {
                         view: "text",

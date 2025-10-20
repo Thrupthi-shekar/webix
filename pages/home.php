@@ -77,40 +77,40 @@ $user = current_user();
                 <!-- Home Page Content -->
                 <div id="homePage" class="page-content home-bg">
                     <div class="section">
-                        <h2 style="margin-top: 0; color: var(--primary);">Welcome to WebixApp!</h2>
-                        <p>Hello <strong><?php echo htmlspecialchars($user['name']); ?></strong>, welcome to your dashboard. This is a modern web application built with PHP, Webix UI framework, and responsive CSS.</p>
+                        <h2 style="margin-top: 0; color: var(--primary);">Welcome to ShopSphere Admin</h2>
+                        <p>Hello <strong><?php echo htmlspecialchars($user['name']); ?></strong>, this dashboard gives you a quick overview of your e‑commerce store performance, catalog, and customer engagement.</p>
                         
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px;">
                             <div class="section" style="margin: 0;">
-                                <h3 style="color: var(--accent); margin-top: 0;">Quick Stats</h3>
+                                <h3 style="color: var(--accent); margin-top: 0;">Store Snapshot</h3>
                                 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
-                                    <span>Profile Complete:</span>
-                                    <span style="color: var(--success);">✓ 100%</span>
+                                    <span>Total Orders (30d):</span>
+                                    <span style="color: var(--success);">1,248</span>
                                 </div>
                                 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
-                                    <span>Account Status:</span>
-                                    <span style="color: var(--success);">Active</span>
+                                    <span>Revenue (30d):</span>
+                                    <span style="color: var(--success);">$84,532</span>
                                 </div>
                                 <div style="display: flex; justify-content: space-between; margin: 10px 0;">
-                                    <span>Member Since:</span>
-                                    <span><?php echo date('M Y'); ?></span>
+                                    <span>Active Products:</span>
+                                    <span>3,420</span>
                                 </div>
                             </div>
                             
                             <div class="section" style="margin: 0;">
-                                <h3 style="color: var(--accent); margin-top: 0;">Recent Activity</h3>
+                                <h3 style="color: var(--accent); margin-top: 0;">Operational Feed</h3>
                                 <div style="margin: 10px 0;">
                                     <div style="display: flex; align-items: center; margin: 8px 0;">
                                         <div style="width: 8px; height: 8px; background: var(--success); border-radius: 50%; margin-right: 10px;"></div>
-                                        <span>Account created successfully</span>
+                                        <span>New order #SO-11892 placed — $129.00</span>
                                     </div>
                                     <div style="display: flex; align-items: center; margin: 8px 0;">
                                         <div style="width: 8px; height: 8px; background: var(--primary); border-radius: 50%; margin-right: 10px;"></div>
-                                        <span>Profile information updated</span>
+                                        <span>Inventory synced: 240 SKUs updated</span>
                                     </div>
                                     <div style="display: flex; align-items: center; margin: 8px 0;">
                                         <div style="width: 8px; height: 8px; background: var(--accent); border-radius: 50%; margin-right: 10px;"></div>
-                                        <span>Login successful</span>
+                                        <span>New review: “Great quality!” — 5★</span>
                                     </div>
                                 </div>
                             </div>
@@ -121,50 +121,50 @@ $user = current_user();
                 <!-- About Page Content -->
                 <div id="aboutPage" class="page-content about-bg" style="display: none;">
                     <div class="section">
-                        <h2 style="margin-top: 0; color: var(--primary);">About WebixApp</h2>
-                        <p>WebixApp is a modern, responsive web application built with cutting-edge technologies to provide a seamless user experience.</p>
+                        <h2 style="margin-top: 0; color: var(--primary);">About ShopSphere</h2>
+                        <p>ShopSphere is a dummy e‑commerce admin built to showcase product management, order processing, promotions, and analytics in a clean, responsive interface.</p>
                         
                         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
                             <div class="section" style="margin: 0;">
-                                <h3 style="color: var(--accent); margin-top: 0;">Technologies Used</h3>
+                                <h3 style="color: var(--accent); margin-top: 0;">Core Modules</h3>
                                 <ul style="list-style: none; padding: 0;">
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
-                                        <span style="color: var(--primary); margin-right: 10px;">⚡</span>
-                                        PHP 8+ with modern features
+                                        <span style="color: var(--primary); margin-right: 10px;">📦</span>
+                                        Catalog — products, variants, collections, inventory
                                     </li>
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
-                                        <span style="color: var(--primary); margin-right: 10px;">🎨</span>
-                                        Webix UI Framework
+                                        <span style="color: var(--primary); margin-right: 10px;">🧾</span>
+                                        Orders — checkout, payments, fulfillment, returns
                                     </li>
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
-                                        <span style="color: var(--primary); margin-right: 10px;">💎</span>
-                                        Responsive CSS3
+                                        <span style="color: var(--primary); margin-right: 10px;">🏷️</span>
+                                        Marketing — coupons, campaigns, recommendations
                                     </li>
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
-                                        <span style="color: var(--primary); margin-right: 10px;">🔒</span>
-                                        Secure authentication
+                                        <span style="color: var(--primary); margin-right: 10px;">📊</span>
+                                        Analytics — sales trends, conversion, cohorts
                                     </li>
                                 </ul>
                             </div>
                             
                             <div class="section" style="margin: 0;">
-                                <h3 style="color: var(--accent); margin-top: 0;">Features</h3>
+                                <h3 style="color: var(--accent); margin-top: 0;">Sample Features</h3>
                                 <ul style="list-style: none; padding: 0;">
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
                                         <span style="color: var(--success); margin-right: 10px;">✓</span>
-                                        User registration & login
+                                        Bulk product import via CSV/Excel
                                     </li>
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
                                         <span style="color: var(--success); margin-right: 10px;">✓</span>
-                                        Responsive design
+                                        Real‑time order status updates
                                     </li>
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
                                         <span style="color: var(--success); margin-right: 10px;">✓</span>
-                                        Form validation
+                                        Discount rules and promotional banners
                                     </li>
                                     <li style="margin: 10px 0; display: flex; align-items: center;">
                                         <span style="color: var(--success); margin-right: 10px;">✓</span>
-                                        Session management
+                                        Integrated reports & KPIs
                                     </li>
                                 </ul>
                             </div>

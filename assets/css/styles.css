@@ -28,7 +28,7 @@ body {
 
 .auth-card {
   width: 100%;
-  max-width: 880px;
+  max-width: 1080px;
   background: radial-gradient(1200px 600px at -10% -20%, rgba(167,139,250,0.15), transparent 40%),
               radial-gradient(1400px 800px at 120% 120%, rgba(34,211,238,0.12), transparent 35%),
               var(--card);
@@ -37,7 +37,7 @@ body {
   box-shadow: 0 10px 40px rgba(0,0,0,0.35), inset 0 0 0 1px rgba(255,255,255,0.02);
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1fr 1.35fr;
 }
 
 .auth-visual {
@@ -53,6 +53,19 @@ body {
 }
 
 .auth-content { padding: 28px; }
+.auth-content .webix_form .webix_el_label .webix_el_box,
+.auth-content .webix_form .webix_el_text .webix_el_box,
+.auth-content .webix_form .webix_el_select .webix_el_box,
+.auth-content .webix_form .webix_el_richselect .webix_el_box,
+.auth-content .webix_form .webix_el_textarea .webix_el_box,
+.auth-content .webix_form .webix_el_datepicker .webix_el_box {
+  width: 100% !important;
+}
+
+.auth-content .webix_form .webix_el_label label {
+  max-width: 100% !important;
+  white-space: normal !important;
+}
 .auth-title { font-size: 24px; margin: 0 0 8px; }
 .auth-subtitle { color: var(--muted); margin: 0 0 16px; }
 

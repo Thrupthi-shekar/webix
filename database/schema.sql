@@ -43,3 +43,4 @@ DESCRIBE `users`;
 SELECT `id`, `name`, `username`, `email`, `graduation`, `masters_done`, `masters_degree`, `created_at` FROM `users` LIMIT 5;
 
 
+
